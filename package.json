@@ -1,0 +1,34 @@
+{
+  "name": "seu-runner",
+  "version": "0.1.0",
+  "description": "sequence task runner for async tasks",
+  "main": "index.js",
+  "scripts": {
+    "test-local": "egg-bin test",
+    "test": "npm run lint --fix && npm run test-local",
+    "cov": "egg-bin cov",
+    "lint": "eslint ./src",
+    "ci": "npm run lint && npm run cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwsun/task-runner.git"
+  },
+  "keywords": [
+    "task",
+    "runner",
+    "sequence"
+  ],
+  "author": "ww.sun@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wwsun/task-runner/issues"
+  },
+  "homepage": "https://github.com/wwsun/task-runner#readme",
+  "devDependencies": {
+    "egg-bin": "^3.3.2",
+    "eslint": "^3.18.0",
+    "eslint-config-egg": "^3.2.0",
+    "power-assert": "^1.4.2"
+  }
+}
