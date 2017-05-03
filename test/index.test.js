@@ -21,9 +21,12 @@ describe('test/index.test.js', () => {
         console.log(before);
       }
 
+      function beforeEach() {
+        console.log('>>>> write database');
+      }
 
       const tasks = [ task1, task2, task3 ];
-      runner.init(tasks);
+      runner.init(tasks, beforeEach);
       yield runner.next(null, 'init');
     });
   });
