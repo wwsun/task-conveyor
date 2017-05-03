@@ -1,5 +1,5 @@
 {
-  "name": "seu-runner",
+  "name": "task-conveyor",
   "version": "0.1.0",
   "description": "sequence task runner for async tasks",
   "main": "index.js",
